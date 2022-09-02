@@ -1,38 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
 .App {
-  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 1000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Crud__head{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.Crud__head button{
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Crud__notes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Note{
+  position: relative;
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  margin: 30px;
+}
+
+.Note__text{
+  padding: 10px;
+}
+
+.Note__delete{
+  position: absolute;
+  top: -21px;
+  right: -21px;
+}
+
+.Crud__text-container{
+  position: relative;
+  width: 500px;
+  height: 100px;
+}
+
+.Crud__text{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  position: relative;
+}
+
+.Crud__submit{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
